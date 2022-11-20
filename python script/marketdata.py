@@ -25,7 +25,7 @@ output_data[1]
 output_data[3]
 output_data[5]
 
-### 2. get the name of the ticker-negative cryptocurrencies only
+### 2. get the name of the ticker-positive cryptocurrencies only
 ticker_positive= soup.find_all('td', class_='table__cell w55 ticker-positive')
 ticker_positive
 output_ticker_positive = []
@@ -39,7 +39,7 @@ list(output_ticker_positive)
 output_ticker_positive[1]
 output_ticker_positive[3]
 
-### 3. get the last value for positive-ticker cryptocurrencies
+### 3. get the percent change values for positive-ticker cryptocurrencies
 percentchange = soup.find_all('bg-quote', class_='positive', field = 'percentchange')
 percentchange
 
